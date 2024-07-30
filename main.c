@@ -7,16 +7,18 @@
 
 int main(void){
 	
-	int Magangle;//Æ«×ª½Ç
+
 	
-	int16_t x,y,z;//Èý¸ö·½ÏòµÄ´Å³¡Êý¾Ý
+	int Magangle;//Æ«×ªï¿½ï¿½
+	
+	int16_t x,y,z;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´Å³ï¿½ï¿½ï¿½ï¿½ï¿½
 	int16_t averagex,averagey,xkey,ykey,xmax,ymax,xmin,ymin;
 	
 	MyI2C_Init();
 	OLED_Init();
 	
 	HMC_Init();
-	HMC_ReadReg(0x03);//¶ÁÈ¡µÚÒ»¸öÊý¾Ý²¢¶ªÆú
+	HMC_ReadReg(0x03);//ï¿½ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ï¿½ï¿½
 	HMC_ReadReg(0x04);
 	HMC_ReadReg(0x05);
 	HMC_ReadReg(0x06);
